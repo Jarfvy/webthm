@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT Tunas Hutan Mandiri</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="thmremovebg.png" />
+  </head>
+  <body>
+    <!-- NAVBAR DENGAN LOGO -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <img src="thmremovebg.png" alt="Logo" class="navbar-logo" />
+          <span>PT TUNAS HUTAN MANDIRI</span>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()">
+          ☰
+        </button>
+      </div>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#lowongan">Lowongan</a></li>
+        <li><a href="#kegiatan">Kegiatan</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#berita">Berita</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- PROFIL -->
+    <section class="section" id="profil">
+      <h2 class="fade-in">Profil Perusahaan</h2>
+      <div class="profil-wrapper fade-in">
+        <img src="thmremovebg.png" alt="Ilustrasi Profil" class="profil-img" />
+        <p>
+          PT Tunas Hutan Mandiri adalah perusahaan nasional yang bergerak di
+          bidang pengelolaan sumber daya hutan secara lestari dengan komitmen
+          pada kelestarian lingkungan dan masyarakat sekitar.
+        </p>
+      </div>
+    </section>
+
+    <!-- LOWONGAN -->
+    <section class="section" id="lowongan">
+      <h2 class="fade-in">Lowongan Pekerjaan</h2>
+      <ul class="fade-in">
+        <li>
+          <strong>Staf Administrasi</strong> – Min. 1th pengalaman, ms.
+          komputer, jujur & teliti.
+        </li>
+        <li>
+          <strong>Teknisi Lapangan</strong> – SMK/D3, paham alat berat &
+          lapangan.
+        </li>
+        <li>
+          <strong>Supervisor Operasional</strong> – Pengalaman kehutanan
+          ≥ 3 tahun.
+        </li>
+      </ul>
+    </section>
+
+    <!-- KEGIATAN -->
+    <section class="section" id="kegiatan">
+      <h2 class="fade-in">Kegiatan Pekerjaan</h2>
+      <ul class="fade-in">
+        <li>Penanaman kembali (reboisasi) dan konservasi lingkungan</li>
+        <li>Pengelolaan kayu legal secara bertanggung jawab</li>
+        <li>Pembinaan masyarakat desa hutan</li>
+        <li>Pengawasan operasional alat berat & logistik</li>
+      </ul>
+    </section>
+
+    <!-- GALERI -->
+    <section class="section" id="galeri">
+      <h2 class="fade-in">Galeri Perusahaan</h2>
+      <div class="gallery-wrapper">
+        <button class="gallery-btn left" onclick="prevImage('gallery')">
+          ❮
+        </button>
+        <div class="gallery-container" id="gallery">
+          <div class="gallery-item">
+            <img src="foto.png" alt="Penanaman Pohon" />
+            <p class="gallery-desc">Deskripsi foto/kegiatan</p>
+          </div>
+          <div class="gallery-item">
+            <img src="foto1.png" alt="Tim Lapangan" />
+            <p class="gallery-desc">Deskripsi foto/kegiatan</p>
+          </div>
+          <div class="gallery-item">
+            <img src="foto2.png" alt="Sosialisasi" />
+            <p class="gallery-desc">Deskripsi foto/kegiatan</p>
+          </div>
+          <div class="gallery-item">
+            <img src="foto3.png" alt="Operasional" />
+            <p class="gallery-desc">Deskripsi foto/kegiatan</p>
+          </div>
+          <div class="gallery-item">
+            <img src="foto4.png" alt="Reboisasi" />
+            <p class="gallery-desc">Deskripsi foto/kegiatan</p>
+          </div>
+        </div>
+        <button class="gallery-btn right" onclick="nextImage('gallery')">
+          ❯
+        </button>
+      </div>
+    </section>
+
+    <!-- BERITA -->
+    <section class="section" id="berita">
+      <h2 class="fade-in">Berita Perusahaan</h2>
+      <input
+        type="text"
+        id="searchBerita"
+        placeholder="Cari berita..."
+        class="search-box fade-in"
+        onkeyup="filterBerita()"
+      />
+      <div class="gallery-wrapper">
+        <button class="gallery-btn left" onclick="prevImage('beritaList')">
+          ❮
+        </button>
+        <div class="gallery-container" id="beritaList">
+          <div class="gallery-item news-style">
+            <h3>Reboisasi Tahap II Dimulai</h3>
+            <p>
+              PT Tunas Hutan Mandiri memulai reboisasi tahap kedua di kawasan
+              Sungai Pasir sebagai bagian dari program pelestarian lingkungan.
+            </p>
+            <span class="news-date">Mei 2025</span>
+          </div>
+          <div class="gallery-item news-style">
+            <h3>Pelatihan Alat Berat untuk Teknisi Baru</h3>
+            <p>
+              Pelatihan intensif diberikan kepada 12 teknisi baru guna
+              meningkatkan efisiensi dan keamanan dalam operasional lapangan.
+            </p>
+            <span class="news-date">April 2025</span>
+          </div>
+          <div class="gallery-item news-style">
+            <h3>Kerja Sama dengan LSM Lingkungan</h3>
+            <p>
+              Kami menjalin kolaborasi strategis dengan LSM untuk mendukung
+              konservasi hutan dan pemberdayaan masyarakat desa hutan.
+            </p>
+            <span class="news-date">Maret 2025</span>
+          </div>
+          <div class="gallery-item news-style">
+            <h3>Kerja Sama dengan LSM Lingkungan</h3>
+            <p>
+              Kami menjalin kolaborasi strategis dengan LSM untuk mendukung
+              konservasi hutan dan pemberdayaan masyarakat desa hutan.
+            </p>
+            <span class="news-date">Maret 2025</span>
+          </div>
+          <div class="gallery-item news-style">
+            <h3>Kerja Sama dengan LSM Lingkungan</h3>
+            <p>
+              Kami menjalin kolaborasi strategis dengan LSM untuk mendukung
+              konservasi hutan dan pemberdayaan masyarakat desa hutan.
+            </p>
+            <span class="news-date">Maret 2025</span>
+          </div>
+        </div>
+        <button class="gallery-btn right" onclick="nextImage('beritaList')">
+          ❯
+        </button>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="section" id="kontak">
+      <h2 class="fade-in">Kontak Kami</h2>
+      <p class="fade-in">
+        📍 Jl. Raya Lontar KM. 57, Desa Sungai Pasir, Pulau Laut Tengah,
+        Kotabaru – Kalsel<br />
+        📞 Telp: (0518) 123456 | ✉️ info@tunasmandiri.co.id
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>
+        Alamat: Jl. Raya Lontar KM. 57, Desa Sungai Pasir, Pulau Laut Tengah,
+        Kotabaru – Kalsel
+      </p>
+      <p>Email: info@tunasmandiri.co.id | Telp: (0518) 123456</p>
+      <p>&copy; 2025 PT Tunas Hutan Mandiri. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
